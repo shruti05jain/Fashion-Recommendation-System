@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact_us.html">Contact</a>
+                <div class="search-bar">
+                   <div id="drop-area">
+                       <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                       <label class="button" for="fileElem">Select the Image</label> &nbsp;
+                   </div>
+                </div>
+                <i class="fa fa-camera" style="font-size:22px  "></i>
+            </div>
+        </div>
+      <div class="mx-2">
+       <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">Sign Up</button>
+      </div>
+    </nav>
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SignupModalLabel">Sign Up in our Website</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label"> Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1400x400/?sweater" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1400x400/?jeans" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1400x400/?shoes" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  <div class="containercircle">
+    <div class="row1">
+        <div class="col-md-2">
+                <img src="https://source.unsplash.com/150x150/?shirts" class="card-img-circle" alt="...">
+                <h5 class="circle-title" style="text-align: center; color: whitesmoke;"> Shirts</h5>
+                <div class="card1">
+  
+                </div>
+            </div>
+        </div>
+      <div class="row1">
+          <div class="col-md-2">
+                  <img src="https://source.unsplash.com/150x150/?jewellery" class="card-img-circle" alt="...">
+              </div>
+        <h5 class="circle-title" style="text-align: center; color: whitesmoke;"> Jewellery</h5>
+      </div>
+    
+        <div class="row1">
+            <div class="col-md-2">
+                    <img src="https://source.unsplash.com/150x150/?shoes" class="card-img-circle" alt="...">
+            
+                </div>
+          <h5 class="circle-title" style="text-align: center; color: whitesmoke;"> Shoes</h5>
+            </div>
+    <div class="row1">
+    <div class="col-md-2">
+            <img src="https://source.unsplash.com/150x150/?jeans" class="card-img-circle" alt="...">
+     
+          
+        </div>
+      <h5 class="circle-title" style="text-align: center; color: whitesmoke;" > Jeans</h5>
+    </div>
+    <div class="row1">
+    <div class="col-md-2">
+            <img src="https://source.unsplash.com/150x150/?suits" class="card-img-circle" alt="...">
+          
+   </div>
+          <h5 class="circle-title" style="text-align: center; color: whitesmoke;"> Suits</h5>
+        </div>
+        <div class="row1">
+        <div class="col-md-2">
+            <img src="https://source.unsplash.com/150x150/?sweatshirts" class="card-img-circle" alt="...">
+          
+        </div>
+       <h5 class="circle-title" style="text-align: center; color: whitesmoke;"> SweatShirts</h5>
+    </div>
+    <div class="row1">
+        <div class="col-md-2">
+                <img src="https://source.unsplash.com/150x150/?coat" class="card-img-circle" alt="...">
+          
+            </div>
+       <h5 class="circle-title" style="text-align: center; color: whitesmoke;" > Jackets</h5>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<br>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card1" style="width: 18rem;">
+                  <img src="https://source.unsplash.com/400x400/?sweater" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title" style="text-align: center; color: whitesmoke;"> Sweater</h5>
+                      <p class="card-text" style="text-align: center; color: whitesmoke;"> Size: Small</p>
+                      <a href="#" class="btn btn-primary" style="text-align: center;">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card2" style="width: 18rem;">
+                  <img src="https://source.unsplash.com/400x400/?jewellery" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title" style="text-align: center; color: whitesmoke;"> Gold Jewellery</h5>
+                      <p class="card-text" style="text-align: center; color: whitesmoke;">Color: Blue Size: Medium</p>
+                      <a href="#" class="btn btn-primary" style="text-align: center;">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card3" style="width: 18rem;">
+                  <img src="https://source.unsplash.com/400x400/?Nike shoes" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title" style="text-align: center; color: whitesmoke;">Nike Shoes</h5>
+                      <p class="card-text" style="text-align: center; color: whitesmoke;">Color: White Size: 8</p>
+                      <a href="#" class="btn btn-primary" style="text-align: center;">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <br>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="https://source.unsplash.com/1400x400/?clothes-shoes" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Sale - 50% Off</h5>
+                  <p>Come visit us and enjoy great discounts on the products!</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
+  <br>
+  <br>
+    <footer class="container-fluid bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@ensembleelegance.com</p>
+                    <p>Phone: +91 87912 09907</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Follow Us</h5>
+                    <p>
+                        <a href="#" class="text-light">Facebook</a> |
+                        <a href="#" class="text-light">Twitter</a> |
+                        <a href="#" class="text-light">Instagram</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
